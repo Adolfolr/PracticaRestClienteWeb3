@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>MostrarAgenda</servlet-name>
+        <servlet-class>servlets.MostrarAgenda</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ValidarAgenda</servlet-name>
+        <servlet-class>servlets.ValidarAgenda</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AnadirPersona</servlet-name>
+        <servlet-class>servlets.AnadirPersona</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MostrarAgenda</servlet-name>
+        <url-pattern>/mostrarAgenda</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidarAgenda</servlet-name>
+        <url-pattern>/validarAgenda</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AnadirPersona</servlet-name>
+        <url-pattern>/anadirPersona</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
